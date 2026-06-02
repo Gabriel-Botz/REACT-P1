@@ -4,5 +4,19 @@
     font-family: Helvetica;
     box-sizing: border-box;
     text-shadow: 1px 1px #000;
+}
 
+a{
+    text-decoration: none;
+}
+
+.App{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(assets/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
