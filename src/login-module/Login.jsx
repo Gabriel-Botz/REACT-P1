@@ -22,11 +22,11 @@ const Login = () => {
       <div className={styles.container}>
         <form onSubmit={handleSubmit}>
             <h1>Faça Login</h1>
-            <div> 
+            <div className={styles.inputField}> 
             <input type="text" placeholder='Digite seu email' onChange={(e) => setUsername(e.target.value)} />
             <FaUser className={styles.icon} />
             </div>
-            <div>
+            <div className={styles.inputField}>
             <input type="password" placeholder='Digite sua senha' onChange={(e) => setPassword(e.target.value)} />
             <FaLock className={styles.icon} />
             </div>
@@ -40,7 +40,7 @@ const Login = () => {
             </div>
             <button type="submit">Entrar</button>
 
-            <div className={styles.sinupLink}>
+            <div className={styles.signupLink}>
               <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
             </div>
         </form>
