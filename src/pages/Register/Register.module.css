@@ -1,0 +1,81 @@
+.container{
+    width: 450px;
+    background-color: rgba( 255, 255, 255, 0.15);
+    backdrop-filter: blur( 10px );
+    border: 2px solid rgba( 255, 255, 255, 0.2 );
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.container h1 {
+    text-align: center;
+    font-size: 30px;
+    color: #fff; 
+}
+
+.container .inputField {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 20px auto;
+}
+
+.inputField input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid rgba( 255, 255, 255, 0.2 );
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 25px;
+}
+
+.inputField input::placeholder {
+    color: #ffffff;
+}
+
+.inputField .icon {
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #a0a0a0;
+}
+
+.container .recallForget{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin: 15px 0 15px;
+    box-shadow: none;
+    text-shadow: none;
+}
+
+.recallForget label {
+    color: #fff;
+}
+
+.recallForget input {
+    margin-right: 5px;
+}
+
+.recallForget a, .signupLink p a {
+    color: #fff;
+    transition: 0.3s;
+}
+
+.recallForget a:hover, .signupLink p a:hover {
+    color: #1d01bb;
+}
+
+.container .signupLink {
+    font-size: 15px;
+    text-align: center;
+    margin: 20px 0 10px;
+    text-shadow: none;
+}
+
