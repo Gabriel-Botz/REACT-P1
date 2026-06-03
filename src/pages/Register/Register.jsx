@@ -4,6 +4,7 @@ import styles from './Register.module.css';
 import stylesInput from '../../components/InputField/InputField.module.css';
 import { useState } from "react";
 import { FaUser, FaLock, FaEnvelope } from 'react-icons/fa';
+import { Link } from "react-router-dom";
 
 const Register = () => {
  
@@ -57,7 +58,7 @@ const Register = () => {
         <Button type="submit">Registrar</Button>
       </form>
       <div className={styles.signupLink}>
-                    <p>Já tem conta? <a href="#">Login</a></p>
+                    <p>Já tem conta? <Link to="/login">Faça Login</Link></p>
                   </div>
     </div>
   )}

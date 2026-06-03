@@ -5,6 +5,8 @@ import InputField from '../../components/InputField/InputField';
 import stylesInput from '../../components/InputField/InputField.module.css';
 import Button from '../../components/Button/Button';
 import stylesButton from '../../components/Button/Button.module.css';
+import { Link } from "react-router-dom";
+
 
 
 const Login = () => {
@@ -52,7 +54,7 @@ const Login = () => {
             <button type="submit">Entrar</button>
 
             <div className={styles.signupLink}>
-              <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
+              <p>Não tem uma conta? <Link to="/register">Cadastre-se</Link></p>
             </div>
         </form>
       </div>
