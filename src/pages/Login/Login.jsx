@@ -4,6 +4,10 @@ import { FaUser, FaLock } from 'react-icons/fa';
 
 import styles from './Login.module.css';
 
+import InputField from '../../components/InputField/InputField';
+
+import stylesInput from '../../components/InputField/InputField.module.css';
+
 
 const Login = () => {
 
@@ -22,14 +26,23 @@ const Login = () => {
       <div className={styles.container}>
         <form onSubmit={handleSubmit}>
             <h1>Faça Login</h1>
-            <div className={styles.inputField}> 
-            <input type="text" placeholder='Digite seu email' onChange={(e) => setUsername(e.target.value)} />
-            <FaUser className={styles.icon} />
-            </div>
-            <div className={styles.inputField}>
-            <input type="password" placeholder='Digite sua senha' onChange={(e) => setPassword(e.target.value)} />
-            <FaLock className={styles.icon} />
-            </div>
+           
+              <InputField
+                type="text"
+                placeholder="Usuário"
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
+                icon={<FaUser className={stylesInput.icon} />}
+              />
+            
+              <InputField
+                type="password"
+                placeholder="Senha"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                icon={<FaLock className={stylesInput.icon} />}
+              />
+            
 
             <div className= {styles.recallForget}>
               <label>

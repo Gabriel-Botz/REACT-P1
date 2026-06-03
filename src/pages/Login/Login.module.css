@@ -33,7 +33,7 @@
 }
 
 .inputField input::placeholder {
-    color: #fff;
+    color: #ffffff;
 }
 
 .inputField .icon {
@@ -42,7 +42,7 @@
     top: 50%;
     transform: translateY(-50%);
     font-size: 18px;
-    color: #fff;
+    color: #a0a0a0;
 }
 
 .container .recallForget{
@@ -50,7 +50,9 @@
     justify-content: space-between;
     align-items: center;
     font-size: 14px;
-    margin: -15px 0 15px;
+    margin: 15px 0 15px;
+    box-shadow: none;
+    text-shadow: none;
 }
 
 .recallForget label {
@@ -63,10 +65,11 @@
 
 .recallForget a, .signupLink p a {
     color: #fff;
+    transition: 0.3s;
 }
 
 .recallForget a:hover, .signupLink p a:hover {
-    text-decoration: underline;
+    color: #1d01bb;
 }
 
 .container button {
@@ -83,6 +86,12 @@
     font-size: 18px;
     font-weight: 600;
     text-shadow: none;
+    transition: 0.3s;
+
+}
+
+.container button:hover {
+    background-color: rgba( 255, 255, 255, 0.3 );
 }
 
 .container .signupLink {

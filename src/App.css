@@ -3,7 +3,7 @@
     padding: 0;
     font-family: Helvetica;
     box-sizing: border-box;
-    text-shadow: 1px 1px #000;
+    text-shadow: 0.2px 0.2px #000;
 }
 
 a{
