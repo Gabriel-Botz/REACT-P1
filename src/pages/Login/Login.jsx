@@ -1,12 +1,10 @@
 import {useState} from 'react';
-
 import { FaUser, FaLock } from 'react-icons/fa';
-
 import styles from './Login.module.css';
-
 import InputField from '../../components/InputField/InputField';
-
 import stylesInput from '../../components/InputField/InputField.module.css';
+import Button from '../../components/Button/Button';
+import stylesButton from '../../components/Button/Button.module.css';
 
 
 const Login = () => {
@@ -42,7 +40,6 @@ const Login = () => {
                 onChange={(e) => setPassword(e.target.value)}
                 icon={<FaLock className={stylesInput.icon} />}
               />
-            
 
             <div className= {styles.recallForget}>
               <label>
@@ -51,6 +48,7 @@ const Login = () => {
               </label>
               <a href="#">Esqueci minha senha</a>
             </div>
+            
             <button type="submit">Entrar</button>
 
             <div className={styles.signupLink}>
