@@ -27,7 +27,7 @@ const Login = () => {
     if (attempts >= 5){
       setBlock(true);
     }
-    
+
   }, [attempts]
 );
 
@@ -57,11 +57,6 @@ const Login = () => {
         setMessage("Login efetuado!\nUsuário: " + username + ", Senha: " + password)
         return;
       }
-
-      
-    
-    // alert("Enviando dados: " + username + " - " + password);
-  
   }
 
   return (
