@@ -1,17 +1,108 @@
-# React + Vite
+# 🔐 TelaLogin — Sistema de Autenticação em React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projeto desenvolvido durante a residência **SerratTec** como parte dos estudos de React. Implementa um sistema completo de autenticação com cadastro, login, validações e controle de tentativas.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Tecnologias Utilizadas
 
-## React Compiler
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [React Router DOM](https://reactrouter.com/)
+- [React Icons](https://react-icons.github.io/react-icons/)
+- CSS Modules
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📁 Estrutura do Projeto
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# REACT-P1
+```
+src/
+├── components/
+│   ├── Button/
+│   │   ├── Button.jsx
+│   │   └── Button.module.css
+│   ├── InputField/
+│   │   ├── InputField.jsx
+│   │   └── InputField.module.css
+│   └── Modal/
+│       ├── Modal.jsx
+│       └── Modal.module.css
+├── pages/
+│   ├── Home/
+│   │   ├── Home.jsx
+│   │   └── Home.module.css
+│   ├── Login/
+│   │   ├── Login.jsx
+│   │   └── Login.module.css
+│   └── Register/
+│       ├── Register.jsx
+│       └── Register.module.css
+├── App.jsx
+└── main.jsx
+```
+
+---
+
+## ✨ Funcionalidades
+
+### Cadastro (`/register`)
+- Campos: nome completo, nome de usuário, email, senha e confirmação de senha
+- Validação de campos obrigatórios
+- Validação de senhas coincidentes
+- Verificação de usuário e email já cadastrados
+- Persistência dos dados no `localStorage`
+- Modal de feedback ao usuário
+
+### Login (`/login`)
+- Verificação de usuário existente no `localStorage`
+- Verificação de senha
+- Controle de tentativas com bloqueio após 5 erros
+- Exibição de tentativas restantes via `useEffect`
+- Modal de feedback ao usuário
+
+---
+
+## 🧩 Componentes Reutilizáveis
+
+| Componente | Props | Descrição |
+|---|---|---|
+| `InputField` | `type`, `placeholder`, `value`, `onChange`, `icon` | Campo de input estilizado com ícone |
+| `Button` | `type`, `onClick`, `children` | Botão padrão do projeto |
+| `Modal` | `message`, `onClose` | Modal de feedback para erros e sucessos |
+
+---
+
+## ⚙️ Como Rodar o Projeto
+
+```bash
+# Clone o repositório
+git clone https://github.com/seu-usuario/seu-repositorio.git
+
+# Acesse a pasta do projeto
+cd nome-da-pasta
+
+# Instale as dependências
+npm install
+
+# Rode o projeto
+npm run dev
+```
+
+Acesse `http://localhost:5173` no navegador.
+
+---
+
+## 📌 Rotas
+
+| Rota | Página |
+|---|---|
+| `/` | Página inicial |
+| `/login` | Tela de login |
+| `/register` | Tela de cadastro |
+
+---
+
+## 👨‍💻 Autor
+
+Desenvolvido por **Gabriel** — Residência SerratTec
